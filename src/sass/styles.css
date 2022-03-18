@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+header {
+  position: fixed;
+  background: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container .header-title-container {
+  width: 60%;
+}
+header .header-container .header-title-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+header .header-container .header-title-container a .header-logo-container {
+  margin-right: 10px;
+  height: 70px;
+}
+header .header-container .header-title-container a .header-logo-container img {
+  height: 100%;
+}
+header .header-container .header-title-container a h1 {
+  font-size: 36px;
+}
+header .header-container nav {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-container nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container nav ul li {
+  list-style: none;
+}
+header .header-container nav ul li .nav-link {
+  text-decoration: none;
+}
+header .header-container .hire-me-btn-container {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-container .hire-me-btn-container a {
+  text-decoration: none;
+}
+
+.testSpacer {
+  background: blue;
+  height: 130vh;
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

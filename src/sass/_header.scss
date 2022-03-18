@@ -1,0 +1,55 @@
+header {
+    position: fixed;
+    background: rgb(255,255,255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-title-container {
+            width: 60%;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                .header-logo-container {
+                    margin-right: 10px;
+                    height: 70px;
+                    img {
+                        height: 100%;
+                    }
+                }
+                h1 {
+                    font-size: 36px;
+                }
+            }
+        }
+        nav {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+                    .nav-link {
+                        text-decoration: none;
+                    }
+                }
+            }    
+        }
+        .hire-me-btn-container {
+            width: 10%;
+            display: flex;
+            justify-content: flex-end;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
