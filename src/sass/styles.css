@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  color: #0e0d0d;
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1600px;
   width: 100%;
@@ -25,6 +31,7 @@ header .header-container {
 }
 header .header-container .header-title-container {
   width: 60%;
+  transition: all ease-in-out 0.2s;
 }
 header .header-container .header-title-container a {
   display: flex;
@@ -38,11 +45,18 @@ header .header-container .header-title-container a .header-logo-container {
 header .header-container .header-title-container a .header-logo-container img {
   height: 100%;
 }
-header .header-container .header-title-container a h1 {
+header .header-container .header-title-container a .header-title h1 {
+  font-family: "Times New Roman", Times, serif;
   font-size: 36px;
+  font-weight: 900;
+  color: #0e0d0d;
+  transition: all ease-in-out 0.2s;
+}
+header .header-container .header-title-container a .header-title h1:hover {
+  transform: scale(1.1);
 }
 header .header-container nav {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
 }
@@ -56,18 +70,39 @@ header .header-container nav ul li {
 }
 header .header-container nav ul li .nav-link {
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0e0d0d;
+  transition: all ease-in-out 0.1s;
+}
+header .header-container nav ul li .nav-link:hover {
+  border-bottom: #DD0030 3px solid;
 }
 header .header-container .hire-me-btn-container {
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
 }
 header .header-container .hire-me-btn-container a {
   text-decoration: none;
+  background: #DD0030;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  font-weight: 900;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.2s;
+}
+header .header-container .hire-me-btn-container a:hover {
+  opacity: 0.9;
+  color: #0e0d0d;
+  box-shadow: 2px 2px 5px rgb(140, 140, 140);
 }
 
 .testSpacer {
-  background: blue;
+  background: #0B4F6C;
   height: 130vh;
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */
