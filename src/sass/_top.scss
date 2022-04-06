@@ -1,0 +1,81 @@
+.home { 
+    background: linear-gradient(299deg, rgba(11,79,108,1) 0%, rgba(85,174,251,1) 100%);
+    height: calc(100vh - 80px);
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .home-inner-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 150px;
+
+        .top-left-container {
+            width: 60%;
+            position: relative;
+            .top-content {
+                h2 {
+                    font-size: 40px;
+                    font-weight:200;
+                    margin-bottom: 10px;
+                }
+                h3 {
+                    font-size: 90px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                h4 {
+                    font-size: 24px;
+                    color: $textGray;
+                    margin-bottom: 90px;
+                    font-weight: 400;
+                }
+                a {
+                    background: $primaryRed;
+                    padding: 20px 30px;
+                    text-transform: uppercase;
+                    border-radius: 30px;
+                    color: $textLight;
+                    box-shadow: 2px 2px black;
+                    text-decoration: none;
+                    font-size: 20px;
+                    font-weight: 600;
+                    &:hover {
+                        box-shadow: 3px 3px black;
+                    }
+                }
+            }
+            .blob-container {
+                position: absolute;
+                top: -150px;
+                left: -100px;
+                img {
+                    height: 700px;
+                    width: 700px;
+                    opacity: .1;
+                }
+            }
+        }
+        .top-right-container {
+            width: 40%;
+        }
+    }
+    .shape-divider {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 134px;
+        }
+        .shape-fill {
+            fill: #FFFFFF;
+        }
+    }
+}

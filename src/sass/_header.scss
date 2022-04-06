@@ -6,10 +6,14 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 9999;
+    top: 0;
+    box-shadow: 1px 1px 5px rgb(100,100,100);
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         .header-title-container {
             width: 60%;
             transition: all ease-in-out .2s;

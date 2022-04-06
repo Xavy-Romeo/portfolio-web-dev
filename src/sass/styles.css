@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: #0e0d0d;
   scroll-behavior: smooth;
 }
@@ -23,11 +23,15 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 9999;
+  top: 0;
+  box-shadow: 1px 1px 5px rgb(100, 100, 100);
 }
 header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 header .header-container .header-title-container {
   width: 60%;
@@ -101,8 +105,87 @@ header .header-container .hire-me-btn-container a:hover {
   box-shadow: 2px 2px 5px rgb(140, 140, 140);
 }
 
+.home {
+  background: linear-gradient(299deg, rgb(11, 79, 108) 0%, rgb(85, 174, 251) 100%);
+  height: calc(100vh - 80px);
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.home .home-inner-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+.home .home-inner-container .top-left-container {
+  width: 60%;
+  position: relative;
+}
+.home .home-inner-container .top-left-container .top-content h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.home .home-inner-container .top-left-container .top-content h3 {
+  font-size: 90px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.home .home-inner-container .top-left-container .top-content h4 {
+  font-size: 24px;
+  color: rgb(60, 60, 60);
+  margin-bottom: 90px;
+  font-weight: 400;
+}
+.home .home-inner-container .top-left-container .top-content a {
+  background: #DD0030;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  box-shadow: 2px 2px black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.home .home-inner-container .top-left-container .top-content a:hover {
+  box-shadow: 3px 3px black;
+}
+.home .home-inner-container .top-left-container .blob-container {
+  position: absolute;
+  top: -150px;
+  left: -100px;
+}
+.home .home-inner-container .top-left-container .blob-container img {
+  height: 700px;
+  width: 700px;
+  opacity: 0.1;
+}
+.home .home-inner-container .top-right-container {
+  width: 40%;
+}
+.home .shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.home .shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 134px;
+}
+.home .shape-divider .shape-fill {
+  fill: #FFFFFF;
+}
+
 .testSpacer {
-  background: #0B4F6C;
-  height: 130vh;
+  background: black;
+  height: 500px;
   width: 100%;
 }/*# sourceMappingURL=styles.css.map */
