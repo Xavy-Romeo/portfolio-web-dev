@@ -31,7 +31,6 @@ header .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
 }
 header .header-container .header-title-container {
   width: 60%;
@@ -50,13 +49,15 @@ header .header-container .header-title-container a .header-logo-container img {
   height: 100%;
 }
 header .header-container .header-title-container a .header-title h1 {
-  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-variant: small-caps;
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 700;
+  letter-spacing: -2px;
   color: #0e0d0d;
   transition: all ease-in-out 0.2s;
 }
-header .header-container .header-title-container a .header-title h1:hover {
+header .header-container .header-title-container a:hover .header-title h1 {
   transform: scale(1.1);
 }
 header .header-container nav {
@@ -75,7 +76,7 @@ header .header-container nav ul li {
 header .header-container nav ul li .nav-link {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   color: #0e0d0d;
   transition: all ease-in-out 0.1s;
@@ -91,11 +92,11 @@ header .header-container .hire-me-btn-container {
 header .header-container .hire-me-btn-container a {
   text-decoration: none;
   background: #DD0030;
-  padding: 20px 40px;
+  padding: 15px 50px;
   border-radius: 30px;
   color: rgba(255, 255, 255, 0.8705882353);
-  font-weight: 900;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
   text-transform: uppercase;
   transition: all ease-in-out 0.2s;
 }
@@ -121,7 +122,10 @@ header .header-container .hire-me-btn-container a:hover {
 }
 .home .home-inner-container .top-left-container {
   width: 60%;
+}
+.home .home-inner-container .top-left-container .top-content {
   position: relative;
+  z-index: 999;
 }
 .home .home-inner-container .top-left-container .top-content h2 {
   font-size: 40px;
@@ -136,7 +140,7 @@ header .header-container .hire-me-btn-container a:hover {
 .home .home-inner-container .top-left-container .top-content h4 {
   font-size: 24px;
   color: rgb(60, 60, 60);
-  margin-bottom: 90px;
+  margin-bottom: 70px;
   font-weight: 400;
 }
 .home .home-inner-container .top-left-container .top-content a {
@@ -149,14 +153,16 @@ header .header-container .hire-me-btn-container a:hover {
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
+  transition: all ease-in-out 0.2s;
 }
 .home .home-inner-container .top-left-container .top-content a:hover {
   box-shadow: 3px 3px black;
 }
 .home .home-inner-container .top-left-container .blob-container {
   position: absolute;
-  top: -150px;
-  left: -100px;
+  z-index: 2;
+  top: -10px;
+  left: 70px;
 }
 .home .home-inner-container .top-left-container .blob-container img {
   height: 700px;

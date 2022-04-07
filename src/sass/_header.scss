@@ -13,7 +13,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+        // font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         .header-title-container {
             width: 60%;
             transition: all ease-in-out .2s;
@@ -30,15 +30,17 @@ header {
                 }
                 .header-title {
                     h1 {
-                        font-family: 'Times New Roman', Times, serif;
+                        text-transform: capitalize;
+                        font-variant: small-caps;
                         font-size: 36px;
-                        font-weight: 900;
+                        font-weight: 700;
+                        letter-spacing: -2px;
                         color: $textDark;
                         transition: all ease-in-out .2s;
-                        &:hover {
-                            transform: scale(1.1);
-                        }
                     }
+                }
+                &:hover .header-title h1 {
+                    transform: scale(1.1);
                 }
             }
         }
@@ -55,7 +57,7 @@ header {
                     .nav-link {
                         text-decoration: none;
                         text-transform: uppercase;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 14px;
                         color: $textDark;
                         transition: all ease-in-out .1s;
@@ -73,11 +75,11 @@ header {
             a {
                 text-decoration: none;
                 background: $primaryRed;
-                padding: 20px 40px;
+                padding: 15px 50px;
                 border-radius: 30px;
                 color: $textLight;
-                font-weight: 900;
-                font-size: 16px;
+                font-size: 20px;
+                font-weight: 600;
                 text-transform: uppercase;
                 transition: all ease-in-out .2s;
                 &:hover {
