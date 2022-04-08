@@ -1,0 +1,78 @@
+.portfolio-container {
+    width: 100%;
+    .projects-container {
+        .projects-row {
+            display: flex;
+            margin-bottom: 20px;
+            .project {
+                color: black;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px;
+                background: linear-gradient(145deg, #e2e8ec, #ffffff);
+                box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+                overflow: hidden;
+                cursor: pointer;
+                .project-img-container {
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-radius: 10px;
+                        transition: transform ease-in-out .3s;
+                    }
+                    .project-img-overlay-container {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: rgba(0,0,0,.7);
+                        transition: all ease-in-out .3s;
+                        opacity: 0;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 10px;
+                        p {
+                            text-transform: uppercase;
+                            color: $secondaryBlue;
+                            font-weight: 700;
+                            letter-spacing: 2px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .project-info {
+                    margin-top: 10px;
+                    h5 {
+                        font-size: 18px;
+                        color: $primaryRed;
+                    }
+                    h3 {
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: $textGray;
+                        span {
+                            color: $textDark;
+                            text-transform: uppercase;
+                            letter-spacing: 1.1px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &:hover img {
+                    transform: scale(1.05);
+                }
+                &:hover .project-img-overlay-container {
+                    opacity: 1;
+                }  
+            }
+        }
+        
+    }
+}

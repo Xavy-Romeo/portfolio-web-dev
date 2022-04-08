@@ -16,6 +16,28 @@ body {
   padding: 0 30px;
 }
 
+/* section styles */
+.section {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+.section .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section .section-title h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #F79FBA;
+  font-variant: small-caps;
+}
+.section .section-title h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 header {
   position: fixed;
   background: white;
@@ -188,6 +210,82 @@ header .header-container .hire-me-btn-container a:hover {
 }
 .home .shape-divider .shape-fill {
   fill: #FFFFFF;
+}
+
+.portfolio-container {
+  width: 100%;
+}
+.portfolio-container .projects-container .projects-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.portfolio-container .projects-container .projects-row .project {
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio-container .projects-container .projects-row .project .project-img-container {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-container .projects-container .projects-row .project .project-img-container img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform ease-in-out 0.3s;
+}
+.portfolio-container .projects-container .projects-row .project .project-img-container .project-img-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.portfolio-container .projects-container .projects-row .project .project-img-container .project-img-overlay-container p {
+  text-transform: uppercase;
+  color: #A8E0FF;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.portfolio-container .projects-container .projects-row .project .project-info {
+  margin-top: 10px;
+}
+.portfolio-container .projects-container .projects-row .project .project-info h5 {
+  font-size: 18px;
+  color: #DD0030;
+}
+.portfolio-container .projects-container .projects-row .project .project-info h3 {
+  font-size: 30px;
+}
+.portfolio-container .projects-container .projects-row .project .project-info p {
+  font-size: 14px;
+  color: rgb(60, 60, 60);
+}
+.portfolio-container .projects-container .projects-row .project .project-info p span {
+  color: #0e0d0d;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+}
+.portfolio-container .projects-container .projects-row .project:hover img {
+  transform: scale(1.05);
+}
+.portfolio-container .projects-container .projects-row .project:hover .project-img-overlay-container {
+  opacity: 1;
 }
 
 .testSpacer {

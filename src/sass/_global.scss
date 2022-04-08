@@ -9,3 +9,25 @@ body {
     width: 100%;
     padding: 0 30px;
 }
+
+/* section styles */
+.section {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            color: $secondaryRed;
+            font-variant: small-caps;
+        }
+        h2 {
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}
