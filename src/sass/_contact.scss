@@ -1,0 +1,75 @@
+.contact-section {
+    padding-bottom: 120px;
+    .contact-container {
+        .contact-content-container {
+            display: flex;
+            margin-top: 100px;
+            .contact-left {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .contact-img-container {
+                    width: 80%;
+                    img {
+                        width: 100%
+                    }
+                }
+            }
+            .contact-right {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .form-container {
+                    width: 60%;
+                    height: 100%;
+                    padding: 20px;
+                    border-radius: 10px;
+                    background: $primaryBlue;
+                    box-shadow: 5px 5px 15px #D1D9E6;
+                    h4 {
+                        text-align: center;
+                        color: $textLight;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            margin-bottom: 5px;
+                            color: $textLight;
+                            font-size: 18px;
+                        }
+                        input, textarea {
+                            border: none;
+                            border-radius: 10px;
+                            padding: 10px 20px;
+                            margin-bottom: 20px;
+                            background: rgba(255,255,255,1);
+                            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                        }
+                        button {
+                            background: $secondaryBlue;
+                            width: 100%;
+                            max-width: 200px;
+                            border: none;
+                            border-radius: 10px;
+                            padding: 10px 20px;
+                            margin-top: 10px;
+                            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            cursor: pointer;
+                            &:hover {
+                                opacity: .7;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

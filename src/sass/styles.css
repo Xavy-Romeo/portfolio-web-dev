@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -304,7 +305,7 @@ header .header-container .hire-me-btn-container a:hover {
   margin-right: 50px;
 }
 .about-section .about-content-container .specialization-container .special-item span {
-  font-size: 30px;
+  font-size: 40px;
   color: #0B4F6C;
 }
 .about-section .about-content-container .specialization-container .special-item h4 {
@@ -391,6 +392,79 @@ header .header-container .hire-me-btn-container a:hover {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.contact-section {
+  padding-bottom: 120px;
+}
+.contact-section .contact-container .contact-content-container {
+  display: flex;
+  margin-top: 100px;
+}
+.contact-section .contact-container .contact-content-container .contact-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .contact-container .contact-content-container .contact-left .contact-img-container {
+  width: 80%;
+}
+.contact-section .contact-container .contact-content-container .contact-left .contact-img-container img {
+  width: 100%;
+}
+.contact-section .contact-container .contact-content-container .contact-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container {
+  width: 60%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background: #0B4F6C;
+  box-shadow: 5px 5px 15px #D1D9E6;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container h4 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8705882353);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container form label {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  font-size: 18px;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container form input, .contact-section .contact-container .contact-content-container .contact-right .form-container form textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background: rgb(255, 255, 255);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container form button {
+  background: #A8E0FF;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.contact-section .contact-container .contact-content-container .contact-right .form-container form button:hover {
+  opacity: 0.7;
 }
 
 .testSpacer {
