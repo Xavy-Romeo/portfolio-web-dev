@@ -1,0 +1,75 @@
+.about-section {
+    background: rgb(245,245,245);
+    padding-bottom: 120px;
+    .about-content-container {
+        h3 {
+            color: $primaryRed;
+            font-size: 22px;
+        }
+        .specialization-container {
+            display: flex;
+            margin: 30px 0 80px 80px;
+            .special-item {
+                margin-right: 50px;
+                span {
+                    font-size: 30px;
+                    color: $primaryBlue;
+                }
+                h4 {
+                    margin: 10px 0 20px 0;
+                    font-size: 18px;
+                }
+                p {
+                    width: 100%;
+                    max-width: 250px;
+                    font-size: 16px;
+                    color: $textGray;
+                }
+            }
+        }
+        .skills-container {
+            margin: 30px 0 80px 0;
+            .skills-row {
+                display: flex;
+                margin-bottom: 50px;
+                .skill {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 250px;
+                    .skill-img-container {
+                        height: 80px;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    h6 {
+                        margin-top: 10px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $textGray;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+        }
+        .education-container {
+            display: flex;
+            margin-left: 80px;
+            margin-top: 30px;
+            .education {
+                h4 {
+                    font-size: 18px;
+                }
+                h5 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .ucla {
+                margin-right: 50px;
+            }
+        }
+    }
+}

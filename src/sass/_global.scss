@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: $textDark;
-    scroll-behavior: smooth;
 }
 
 .container {
@@ -26,8 +25,9 @@ body {
         }
         h2 {
             font-size: 60px;
-            text-transform: uppercase;
-            font-weight: 600;
+            // text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0px;
         }
     }
 }

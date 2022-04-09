@@ -7,7 +7,6 @@
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: #0e0d0d;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -34,8 +33,8 @@ body {
 }
 .section .section-title h2 {
   font-size: 60px;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0px;
 }
 
 header {
@@ -214,6 +213,7 @@ header .header-container .hire-me-btn-container a:hover {
 
 .portfolio-container {
   width: 100%;
+  margin-bottom: 100px;
 }
 .portfolio-container .projects-container .projects-row {
   display: flex;
@@ -227,7 +227,7 @@ header .header-container .hire-me-btn-container a:hover {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
   box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   overflow: hidden;
-  cursor: pointer;
+  text-decoration: none;
 }
 .portfolio-container .projects-container .projects-row .project .project-img-container {
   position: relative;
@@ -286,6 +286,77 @@ header .header-container .hire-me-btn-container a:hover {
 }
 .portfolio-container .projects-container .projects-row .project:hover .project-img-overlay-container {
   opacity: 1;
+}
+
+.about-section {
+  background: rgb(245, 245, 245);
+  padding-bottom: 120px;
+}
+.about-section .about-content-container h3 {
+  color: #DD0030;
+  font-size: 22px;
+}
+.about-section .about-content-container .specialization-container {
+  display: flex;
+  margin: 30px 0 80px 80px;
+}
+.about-section .about-content-container .specialization-container .special-item {
+  margin-right: 50px;
+}
+.about-section .about-content-container .specialization-container .special-item span {
+  font-size: 30px;
+  color: #0B4F6C;
+}
+.about-section .about-content-container .specialization-container .special-item h4 {
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+}
+.about-section .about-content-container .specialization-container .special-item p {
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px;
+  color: rgb(60, 60, 60);
+}
+.about-section .about-content-container .skills-container {
+  margin: 30px 0 80px 0;
+}
+.about-section .about-content-container .skills-container .skills-row {
+  display: flex;
+  margin-bottom: 50px;
+}
+.about-section .about-content-container .skills-container .skills-row .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.about-section .about-content-container .skills-container .skills-row .skill .skill-img-container {
+  height: 80px;
+}
+.about-section .about-content-container .skills-container .skills-row .skill .skill-img-container img {
+  height: 100%;
+}
+.about-section .about-content-container .skills-container .skills-row .skill h6 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+  text-transform: uppercase;
+}
+.about-section .about-content-container .education-container {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+.about-section .about-content-container .education-container .education h4 {
+  font-size: 18px;
+}
+.about-section .about-content-container .education-container .education h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.about-section .about-content-container .education-container .ucla {
+  margin-right: 50px;
 }
 
 .testSpacer {
