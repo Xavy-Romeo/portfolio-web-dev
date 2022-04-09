@@ -359,6 +359,40 @@ header .header-container .hire-me-btn-container a:hover {
   margin-right: 50px;
 }
 
+.cto-section {
+  background-image: url("../assets/images/cappuccino-laptop.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cto-section .cto-overlay {
+  height: 100%;
+  width: 100%;
+  padding: 200px 0;
+  background: rgba(11, 79, 108, 0.7803921569);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cto-section .cto-overlay h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8705882353);
+  margin-bottom: 30px;
+}
+.cto-section .cto-overlay a {
+  text-decoration: none;
+  background: #DD0030;
+  padding: 15px 50px;
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .testSpacer {
   background: black;
   height: 500px;

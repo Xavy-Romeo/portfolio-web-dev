@@ -1,0 +1,34 @@
+.cto-section {
+   background-image: url("../assets/images/cappuccino-laptop.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   .cto-overlay {
+        height: 100%;
+        width: 100%;
+        padding: 200px 0;
+        background: #0b4f6cc7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 50px;
+            text-transform: capitalize;
+            color: $textLight;
+            margin-bottom: 30px;
+        }
+        a {
+            text-decoration: none;
+            background: $primaryRed;
+            padding: 15px 50px;
+            border-radius: 30px;
+            color: $textLight;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+        }
+    }
+}
