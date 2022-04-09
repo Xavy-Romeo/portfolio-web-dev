@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    .footer-border {
+        width: 80%;
+        max-width: 1200px;
+        
+    }
+    .footer-container {
+        border-top: 1px solid $textGray;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .social-icons-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin-right: 10px;                
+            }
+            a {
+                font-size: 35px;
+                color: $primaryBlue;
+                margin: 0 5px;
+            }
+        }
+        .copy-footer {
+            p {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
