@@ -13,9 +13,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         .header-title-container {
-            width: 60%;
             transition: all ease-in-out .2s;
             a {
                 display: flex;
@@ -44,48 +42,51 @@ header {
                 }
             }
         }
-        nav {
-            width: 30%;
+        .nav-container {
             display: flex;
-            justify-content: flex-end;
-            ul {
-                width: 100%;
+            align-items: center;
+            nav {
                 display: flex;
-                justify-content: space-between;
-                li {
-                    list-style: none;
-                    .nav-link {
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                        font-size: 14px;
-                        color: $textDark;
-                        transition: all ease-in-out .1s;
-                        &:hover {
-                            border-bottom: $primaryRed 3px solid;
+                justify-content: flex-end;
+                margin-right: 20px;
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        list-style: none;
+                        .nav-link {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: $textDark;
+                            margin: 0 20px;
+                            transition: all ease-in-out .1s;
+                            &:hover {
+                                border-bottom: $primaryRed 3px solid;
+                            }
                         }
                     }
-                }
-            }    
-        }
-        .hire-me-btn-container {
-            width: 15%;
-            display: flex;
-            justify-content: flex-end;
-            a {
-                text-decoration: none;
-                background: $primaryRed;
-                padding: 15px 50px;
-                border-radius: 30px;
-                color: $textLight;
-                font-size: 20px;
-                font-weight: 600;
-                text-transform: uppercase;
-                transition: all ease-in-out .2s;
-                &:hover {
-                    opacity: .9;
-                    color: $textDark;
-                    box-shadow: 2px 2px 5px rgb(140, 140, 140);
+                }    
+            }
+            .hire-me-btn-container {
+                display: flex;
+                justify-content: flex-end;
+                a {
+                    text-decoration: none;
+                    background: $primaryRed;
+                    padding: 15px 50px;
+                    border-radius: 30px;
+                    color: $textLight;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    transition: all ease-in-out .2s;
+                    &:hover {
+                        opacity: .9;
+                        color: $textDark;
+                        box-shadow: 2px 2px 5px rgb(140, 140, 140);
+                    }
                 }
             }
         }

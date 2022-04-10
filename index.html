@@ -31,32 +31,35 @@
                     </div>
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#about-me" class="nav-link">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me" class="nav-link">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="hire-me-btn-container">
-                <a href="#contact-me">
-                    Hire Me
-                </a>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#about-me" class="nav-link">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#contact-me" class="nav-link">Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="hire-me-btn-container">
+                    <a href="#contact-me">
+                        Hire Me
+                    </a>
+                </div>
             </div>
+            
             
         </div>
     </header>
     <main>
-        <div class="home" id="home">
+        <section class="home" id="home">
             <div class="home-inner-container container">
                 <div class="top-left-container">
                     <div class="top-content">
@@ -88,11 +91,11 @@
                     <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
                 </svg>
             </div>
-        </div>
+        </section>
         
-        <div class="section" id="portfolio">
+        <section class="section" id="portfolio">
             <div class="portfolio-container container">
-                <div class="section-title">
+                <div class="section-title" id="portfolio-title">
                     <h3>
                         Portfolio
                     </h3>
@@ -131,7 +134,7 @@
                             </div>
                         </a>
                         <a href="https://xavy-romeo.github.io/hgtv-newsletter-email/" target="_blank" 
-                            class="project" id="project-caesars"
+                            class="project" id="project-hgtv"
                         >
                             <div class="project-img-container">
                                 <img src="./src/assets/images/hgtv.jpg" alt="project preview" />
@@ -161,7 +164,7 @@
                     </div>
                     <div class="projects-row">
                         <a href="https://xavy-romeo.github.io/relais-newsletter-email/" target="_blank" 
-                            class="project" id="project-caesars"
+                            class="project" id="project-relais"
                         >
                             <div class="project-img-container">
                                 <img src="./src/assets/images/relais.jpg" alt="project preview" />
@@ -189,7 +192,7 @@
                             </div>
                         </a>
                         <a href="https://xavy-romeo.github.io/cpk-promo-email/" target="_blank" 
-                            class="project" id="project-caesars"
+                            class="project" id="project-cpk"
                         >
                             <div class="project-img-container">
                                 <img src="./src/assets/images/cpk.jpg" alt="project preview" />
@@ -217,7 +220,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="projects-row">
+                    <div class="projects-row" id="bottom-project-row">
                         <a href="https://xavy-romeo.github.io/bvlgari-newsletter-email/" target="_blank" 
                             class="project" id="project-caesars"
                         >
@@ -334,11 +337,11 @@
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <div class="section about-section" id="about-me">
+        <section class="section about-section" id="about-me">
             <div class="about-container container">
-                <div class="section-title">
+                <div class="section-title" id="about-title">
                     <h3>
                         About Me
                     </h3>
@@ -468,9 +471,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="cto-section">
+        <section class="cto-section">
             <div class="cto-overlay">
                 <h2>
                     Like what you see?
@@ -479,11 +482,11 @@
                     Contact Me
                 </a>
             </div>
-        </div>
+        </section>
 
-        <div class="section contact-section" id="contact-me">
+        <section class="section contact-section" id="contact-me">
             <div class="contact-container container">
-                <div class="section-title">
+                <div class="section-title" id="contact-title">
                     <h3>
                         Contact Me
                     </h3>
@@ -538,7 +541,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-container container">
@@ -562,5 +565,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/Observer.min.js"></script>
+    <script src="./src/js/gsap.js"></script>
 </body>
 </html>
