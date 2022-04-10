@@ -45,6 +45,9 @@ header {
         .nav-container {
             display: flex;
             align-items: center;
+            @media only screen and (max-width: 1199px) {
+                display: none;
+            } 
             nav {
                 display: flex;
                 justify-content: flex-end;
@@ -90,6 +93,53 @@ header {
                     }
                 }
             }
+        }
+        .mobile-nav {
+            @media only screen and (min-width: 1200px) {
+                display: none;
+            }
+            .menu-icon {
+                font-size: 30px;
+                cursor: pointer;
+                .fa-bars {
+                    color: $textDark;
+                }
+                .fa-xmark {
+                    color: $textDark;
+                    display: none;
+                }
+            } 
+            .mobile-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                text-align: center;
+                background: $primaryBlue;
+                transition: all .3s ease-in-out;
+                padding: 20px 0;
+                .nav-item {
+                    .nav-link {
+                        padding: 15px 0 !important;
+                        display: inline-block;
+                        width: 100% !important;
+                        height: 100% !important;
+                        text-decoration: none !important;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $textLight;
+                        transition: all ease-in-out .3s;
+                        &:hover {
+                            background: $textDark;
+                        }
+                    }
+                }
+            }
+            .mobile-menu.active {
+                left: 0;
+            }
+
         }
     }
 }

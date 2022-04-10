@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -79,11 +78,6 @@ body {
   width: 100%;
 }
 
-#body {
-  overflow-y: hidden;
-  overflow-x: hidden !important;
-}
-
 header {
   position: fixed;
   background: white;
@@ -131,6 +125,11 @@ header .header-container .nav-container {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1199px) {
+  header .header-container .nav-container {
+    display: none;
+  }
+}
 header .header-container .nav-container nav {
   display: flex;
   justify-content: flex-end;
@@ -175,6 +174,50 @@ header .header-container .nav-container .hire-me-btn-container a:hover {
   background: #F79FBA;
   color: #0e0d0d;
   box-shadow: 3px 3px 5px rgb(100, 100, 100);
+}
+@media only screen and (min-width: 1200px) {
+  header .header-container .mobile-nav {
+    display: none;
+  }
+}
+header .header-container .mobile-nav .menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+header .header-container .mobile-nav .menu-icon .fa-bars {
+  color: #0e0d0d;
+}
+header .header-container .mobile-nav .menu-icon .fa-xmark {
+  color: #0e0d0d;
+  display: none;
+}
+header .header-container .mobile-nav .mobile-menu {
+  position: fixed;
+  top: 80px;
+  left: -100%;
+  width: 100%;
+  text-align: center;
+  background: #0B4F6C;
+  transition: all 0.3s ease-in-out;
+  padding: 20px 0;
+}
+header .header-container .mobile-nav .mobile-menu .nav-item .nav-link {
+  padding: 15px 0 !important;
+  display: inline-block;
+  width: 100% !important;
+  height: 100% !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8705882353);
+  transition: all ease-in-out 0.3s;
+}
+header .header-container .mobile-nav .mobile-menu .nav-item .nav-link:hover {
+  background: #0e0d0d;
+}
+header .header-container .mobile-nav .mobile-menu.active {
+  left: 0;
 }
 
 .home {
