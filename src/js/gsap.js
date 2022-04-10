@@ -4,9 +4,9 @@ let loadingTl = gsap.timeline();
 
 // loading timeline
 loadingTl
-    .fromTo('.header-container', 
+    .fromTo('header', 
         {opacity: 0}, 
-        {opacity: 1, duration: 1, ease: 'power3.out'}
+        {opacity: 1, duration: 1.5, delay: 5.5, ease: 'power3.out'}
     )
     .fromTo('.home',
         {opacity: 0},
