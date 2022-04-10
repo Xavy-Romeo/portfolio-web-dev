@@ -38,13 +38,15 @@
                     text-transform: uppercase;
                     border-radius: 30px;
                     color: $textLight;
-                    box-shadow: 2px 2px black;
+                    box-shadow: 2px 2px 5px $textDark;
                     text-decoration: none;
                     font-size: 20px;
                     font-weight: 600;
                     transition: all ease-in-out .2s;
                     &:hover {
-                        box-shadow: 3px 3px black;
+                        background: $secondaryRed;
+                        color: $textDark;
+                        box-shadow: 5px 5px 5px $textDark;
                     }
                 }
             }

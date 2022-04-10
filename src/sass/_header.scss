@@ -8,7 +8,7 @@ header {
     justify-content: center;
     z-index: 9999;
     top: 0;
-    box-shadow: 1px 1px 5px rgb(100,100,100);
+    box-shadow: 1px 1px 5px rgb(150,150,150);
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -82,10 +82,11 @@ header {
                     font-weight: 600;
                     text-transform: uppercase;
                     transition: all ease-in-out .2s;
+                    box-shadow: 1px 1px 5px rgb(140, 140, 140);
                     &:hover {
-                        opacity: .9;
+                        background: $secondaryRed;
                         color: $textDark;
-                        box-shadow: 2px 2px 5px rgb(140, 140, 140);
+                        box-shadow: 3px 3px 5px rgb(100, 100, 100);
                     }
                 }
             }

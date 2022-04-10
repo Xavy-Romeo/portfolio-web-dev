@@ -2,8 +2,8 @@ let loaderTl = gsap.timeline();
 
 loaderTl
     .fromTo('.loader-logo',
-        {scale: .2, opacity: 0},
-        {scale: 1.5, opacity: 1, rotation: '+=360', duration: 2, ease: Power3.easeOut}
+        {scale: .1, opacity: 0},
+        {scale: 1, opacity: 1, rotation: '+=1800', duration: 2, ease: Power4.easeOut}
     )
     .to('.left-loader',
         {x: '100%', yoyo: true, repeat: 1, delay: 1, duration: 1, ease: Power2.easeOut},

@@ -152,7 +152,7 @@ gsap.fromTo('.cto-overlay h2' ,
 
 gsap.fromTo('.cto-overlay a' ,
     {opacity: 0},
-    {opacity: 1, duration: 2, delay: .5, ease: 'power3.out',
+    {opacity: 1, duration: 1.5, delay: .3, ease: 'power3.out',
         scrollTrigger:{
             trigger: '.cto-overlay a',
             start: "bottom bottom"

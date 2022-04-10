@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,7 +73,7 @@ body {
 }
 .pre-loader-container .pre-loader .loader-logo {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
 }
 .pre-loader-container .pre-loader .loader-logo img {
   width: 100%;
@@ -92,7 +93,7 @@ header {
   justify-content: center;
   z-index: 9999;
   top: 0;
-  box-shadow: 1px 1px 5px rgb(100, 100, 100);
+  box-shadow: 1px 1px 5px rgb(150, 150, 150);
 }
 header .header-container {
   display: flex;
@@ -168,11 +169,12 @@ header .header-container .nav-container .hire-me-btn-container a {
   font-weight: 600;
   text-transform: uppercase;
   transition: all ease-in-out 0.2s;
+  box-shadow: 1px 1px 5px rgb(140, 140, 140);
 }
 header .header-container .nav-container .hire-me-btn-container a:hover {
-  opacity: 0.9;
+  background: #F79FBA;
   color: #0e0d0d;
-  box-shadow: 2px 2px 5px rgb(140, 140, 140);
+  box-shadow: 3px 3px 5px rgb(100, 100, 100);
 }
 
 .home {
@@ -219,14 +221,16 @@ header .header-container .nav-container .hire-me-btn-container a:hover {
   text-transform: uppercase;
   border-radius: 30px;
   color: rgba(255, 255, 255, 0.8705882353);
-  box-shadow: 2px 2px black;
+  box-shadow: 2px 2px 5px #0e0d0d;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
   transition: all ease-in-out 0.2s;
 }
 .home .home-inner-container .top-left-container .top-content a:hover {
-  box-shadow: 3px 3px black;
+  background: #F79FBA;
+  color: #0e0d0d;
+  box-shadow: 5px 5px 5px #0e0d0d;
 }
 .home .home-inner-container .top-left-container .blob-container {
   position: absolute;
@@ -443,6 +447,13 @@ header .header-container .nav-container .hire-me-btn-container a:hover {
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
+  box-shadow: 2px 2px 5px #0e0d0d;
+  transition: all ease-in-out 0.2s;
+}
+.cto-section .cto-overlay a:hover {
+  background: #F79FBA;
+  color: #0e0d0d;
+  box-shadow: 5px 5px 5px #0e0d0d;
 }
 
 .contact-section {
