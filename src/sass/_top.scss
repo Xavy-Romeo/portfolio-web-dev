@@ -7,32 +7,70 @@
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    @media only screen and (max-width: 899px) {
+        height: calc(70vh - 80px);
+    }
     .home-inner-container {
         display: flex;
         justify-content: center;
         padding-top: 150px;
+        @media only screen and (max-width: 899px) {
+            padding-top: 50px;
+        }
+        @media only screen and (max-width: 599px) {
+            transform: scale(.8);
+        }
+        @media only screen and (max-width: 499px) {
+            padding-top: 0;
+        }
         .top-left-container {
             width: 60%;
+            @media only screen and (max-width: 1399px) {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            @media only screen and (max-width: 899px) {
+                transform: scale(.8);
+            }
             .top-content {
                 position: relative;
-                z-index: 999;
+                @media only screen and (max-width: 799px) {
+                    text-align: center;
+                }
                 h2 {
+                    position: relative;
                     font-size: 40px;
                     font-weight:200;
                     margin-bottom: 10px;
+                    z-index: 10;
                 }
                 h3 {
+                    position: relative;
                     font-size: 90px;
                     font-weight: 700;
                     text-transform: uppercase;
+                    z-index: 10;
+                    @media only screen and (max-width: 799px) {
+                        font-size: 70px;
+                    }
+                    span {
+                        @media only screen and (min-width: 650px) {
+                            display: none;
+                        } 
+                    }
                 }
                 h4 {
+                    position: relative;
                     font-size: 24px;
                     color: $textGray;
                     margin-bottom: 70px;
                     font-weight: 400;
+                    z-index: 10;
                 }
                 a {
+                    position: relative;
                     background: $primaryRed;
                     padding: 20px 30px;
                     text-transform: uppercase;
@@ -43,27 +81,56 @@
                     font-size: 20px;
                     font-weight: 600;
                     transition: all ease-in-out .2s;
+                    z-index: 10;
                     &:hover {
                         background: $secondaryRed;
                         color: $textDark;
                         box-shadow: 5px 5px 5px $textDark;
                     }
                 }
-            }
-            .blob-container {
-                position: absolute;
-                z-index: 2;
-                top: -10px;
-                left: 70px;
-                img {
-                    height: 700px;
-                    width: 700px;
-                    opacity: .1;
+                .blob-container {
+                    width: 100%;
+                    max-width: 700px;
+                    z-index: 1;
+                    position: absolute;
+                    top: -170px;
+                    left: -100px;
+                    @media only screen and (max-width: 799px) {
+                        text-align: center;
+                        left: -20px;
+                        top: -150px;
+                    }
+                    @media only screen and (max-width: 649px) {
+                        // height: 500px;
+                        // left: -70px;
+                        // top: -100px;
+                        height: 900px;
+                        left: -250px;
+                        top: -260px;
+                    }
+                    @media only screen and (max-width: 499px) {
+                        // height: 500px;
+                        // left: -70px;
+                        // top: -100px;
+                        height: 500px;
+                        left: -50px;
+                        top: -100px;
+                    }
+                    img {
+                        position: relative;
+                        z-index: 1;
+                        height: 100%;
+                        opacity: .25;
+                    }
                 }
-            }
+                
+            }            
         }
         .top-right-container {
             width: 40%;
+            @media only screen and (max-width: 1399px) {
+                display: none;
+            }
         }
     }
     .shape-divider {
@@ -73,6 +140,9 @@
         width: 100%;
         overflow: hidden;
         line-height: 0;
+        @media only screen and (max-width: 799px) {
+            display: none;
+        }
         svg {
             position: relative;
             display: block;

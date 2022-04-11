@@ -1,17 +1,33 @@
 .about-section {
     background: rgb(245,245,245);
     padding-bottom: 120px;
+    overflow: hidden;
     .about-content-container {
         margin-top: 100px;
         h3 {
             color: $primaryRed;
             font-size: 22px;
+            @media only screen and (max-width: 999px) {
+                text-align: center;
+            }
         }
         .specialization-container {
             display: flex;
             margin: 30px 0 80px 80px;
+            gap: 50px;
+            @media only screen and (max-width: 999px) {
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+            }
             .special-item {
-                margin-right: 50px;
+                @media only screen and (max-width: 999px) {
+                    text-align: center;
+                    width: 50%;
+                }
+                @media only screen and (max-width: 599px) {
+                    width: 95%;
+                }
                 span {
                     font-size: 40px;
                     color: $primaryBlue;
@@ -25,6 +41,9 @@
                     max-width: 250px;
                     font-size: 16px;
                     color: $textGray;
+                    @media only screen and (max-width: 999px) {
+                        max-width: none;
+                    }
                 }
             }
         }
@@ -33,13 +52,22 @@
             .skills-row {
                 display: flex;
                 margin-bottom: 50px;
+                @media only screen and (max-width: 499px) {
+                    display: grid;
+                    grid-template-columns: 6fr 6fr;
+                    margin-bottom: 0;
+                }
                 .skill {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    width: 250px;
+                    width: 100%;
+                    max-width: 250px;
                     .skill-img-container {
                         height: 80px;
+                        @media only screen and (max-width: 599px) {
+                            height: 60px;
+                        }
                         img {
                             height: 100%;
                         }
@@ -50,6 +78,12 @@
                         font-weight: 700;
                         color: $textGray;
                         text-transform: uppercase;
+                        @media only screen and (max-width: 499px) {
+                            margin-bottom: 40px;
+                        }
+                        @media only screen and (max-width: 459px) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -59,17 +93,54 @@
             display: flex;
             margin-left: 80px;
             margin-top: 30px;
+            gap: 50px;
+            @media only screen and (max-width: 999px) {
+                flex-direction: column;
+                align-items: center;
+                margin-left: 0;
+            }
             .education {
+                @media only screen and (max-width: 999px) {
+                    text-align: center;
+                    width: 50%;
+                }
+                @media only screen and (max-width: 599px) {
+                    width: 95%;
+                }
+                span {
+                    font-size: 40px;
+                    color: $primaryBlue;
+                }
                 h4 {
                     font-size: 18px;
+                    margin: 10px 0 10px 0;
+                    @media only screen and (max-width: 359px) {
+                        font-size: 16px;
+                    }
                 }
                 h5 {
                     font-size: 16px;
                     font-weight: 500;
+                    @media only screen and (max-width: 359px) {
+                        font-size: 14px;
+                    }
+                    span {
+                        font-size: 16px;
+                        color: $textGray;
+                    }
+                    .break {
+                        @media only screen and (min-width: 449px) {
+                            display: none;
+                        }
+                    }
                 }
+
             }
             .ucla {
                 margin-right: 50px;
+                @media only screen and (max-width: 999px) {
+                    margin-right: 0;
+                }
             }
         }
     }

@@ -1,10 +1,14 @@
 .cto-section {
-   background-image: url("../assets/images/cappuccino-laptop.jpg");
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   .cto-overlay {
+    background-image: url("../assets/images/cappuccino-laptop.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media only screen and (max-width: 599px) {
+        // background-image: url("../assets/images/cappuccino-laptop-mobile.jpg");
+        background-position: top left;
+    }
+    .cto-overlay {
         height: 100%;
         width: 100%;
         padding: 200px 0;
@@ -13,11 +17,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media only screen and (max-width: 799px) {
+            padding: 100px 0;
+        }
+        @media only screen and (max-width: 599px) {
+            padding: 100px 0;
+        }
+        @media only screen and (max-width: 449px) {
+            padding: 50px 0;
+        }
         h2 {
             font-size: 50px;
             text-transform: capitalize;
             color: $textLight;
             margin-bottom: 30px;
+            @media only screen and (max-width: 599px) {
+                font-size: 40px;
+            }
+            @media only screen and (max-width: 449px) {
+                line-height: 50px;
+            }
+            span {
+                @media only screen and (min-width: 450px) {
+                    display: none;
+                } 
+            }
         }
         a {
             text-decoration: none;

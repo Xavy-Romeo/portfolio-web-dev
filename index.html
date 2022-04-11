@@ -20,7 +20,7 @@
 </head>
 
 <body id="body">
-    <!-- <article class="pre-loader-container" id="loader">
+    <article class="pre-loader-container" id="loader">
         
             <div class="left-loader"></div>
             <div class="right-loader"></div>
@@ -30,7 +30,7 @@
                 <img src="./src/assets/images/JV_Logo.png" alt="logo">
             </div>
         </div>
-    </article> -->
+    </article>
     <div class="main-container" id="main">
         <header>
             <div class="header-container container">
@@ -107,19 +107,23 @@
                                 Hi, I'm Javier
                             </h2>
                             <h3>
-                                Web Developer
+                                Web <span><br></span> Developer
                             </h3>
                             <h4>
                                 I help bring your ideas to life.
                             </h4>
-                            <a href="#">
+                            <a 
+                                download='Resume - Javier Romeo Vazquez'
+                                href='./src/assets/files/Javier Romeo Vazquez - Resume.pdf'
+                                aria-label='download resume button'
+                            >
                                 <i class="fa-solid fa-download"></i>
                                 &nbsp;
                                 Download Resume
                             </a>
-                        </div>
-                        <div class="blob-container">
-                            <img src="./src/assets/images/blob.svg" alt="blob">
+                            <div class="blob-container">
+                                <img src="./src/assets/images/blob.svg" alt="blob">
+                            </div>
                         </div>
                     </div>
                     <div class="top-right-container">
@@ -261,8 +265,8 @@
                                     </p>
                                 </div>
                             </a>
-                        </div>
-                        <div class="projects-row" id="bottom-project-row">
+                        </div> 
+                        <div class="projects-row bottom-projects-row" id="bottom-projects-row">
                             <a href="https://xavy-romeo.github.io/bvlgari-newsletter-email/" target="_blank" 
                                 class="project" id="project-caesars"
                             >
@@ -398,7 +402,6 @@
                         <div class="specialization-container">
                             <div class="special-item">
                                 <span>
-                                    <!-- <i class="fa-solid fa-code"></i> -->
                                     <i class="fa-solid fa-file-code"></i>
                                 </span>
                                 <h4>HTML Email Development</h4>
@@ -487,11 +490,16 @@
                         </h3>
                         <div class="education-container">
                             <div class="education ucla">
+                                <span>
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </span>
                                 <h4>
                                     Full Stack Web Development
                                 </h4>
                                 <h5>
-                                    University of California, Los Angeles (UCLA)
+                                    University of California,
+                                    <span class="break"></br></span>
+                                    Los Angeles (UCLA)
                                     </br>
                                     <span>
                                         Certificate
@@ -499,11 +507,17 @@
                                 </h5>
                             </div>
                             <div class="education uci">
+                                <span>
+                                    <!-- <i class="fa-solid fa-dollar-sign"></i> -->
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </span>
                                 <h4>
                                     Business Economics
                                 </h4>
                                 <h5>
-                                    University of California, Irvine (UCI)
+                                    University of California, 
+                                    <span class="break"></br></span>
+                                    Irvine (UCI)
                                     </br>
                                     <span>
                                         Bachelor's
@@ -518,7 +532,9 @@
             <section class="cto-section">
                 <div class="cto-overlay">
                     <h2>
-                        Like what you see?
+                        Like what
+                        <span></br></span>
+                        you see?
                     </h2>
                     <a href="mailto: Xavy.Romeo.SSE@gmail.com">
                         Contact Me
@@ -609,12 +625,11 @@
         </footer>
     </div>
     
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/Observer.min.js"></script>
     <script src="./src/js/gsap-loader.js"></script>
     <script src="./src/js/gsap.js"></script>
-    <script src="./src/js/index.js"></script> -->
     <script src="./src/js/mobile-menu.js"></script>
 </body>
 </html>

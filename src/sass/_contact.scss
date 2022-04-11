@@ -1,16 +1,30 @@
 .contact-section {
     padding-bottom: 120px;
+    overflow: hidden;
     .contact-container {
         .contact-content-container {
             display: flex;
             margin-top: 100px;
+            @media only screen and (max-width: 1199px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            @media only screen and (max-width: 499px) {
+                margin-top: 50px;
+            }
             .contact-left {
                 width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media only screen and (max-width: 799px) {
+                    width: 100%;
+                }
                 .contact-img-container {
                     width: 80%;
+                    // @media only screen and (max-width: 799px) {
+                    //     width: 95%;
+                    // }
                     img {
                         width: 100%
                     }
@@ -21,6 +35,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media only screen and (max-width: 1199px) {
+                    width: 100%;
+                    margin-top: 50px;
+                }
                 .form-container {
                     width: 60%;
                     height: 100%;
@@ -28,6 +46,12 @@
                     border-radius: 10px;
                     background: $primaryBlue;
                     box-shadow: 5px 5px 15px #D1D9E6;
+                    @media only screen and (max-width: 1199px) {
+                        width: 80%;
+                    }
+                    @media only screen and (max-width: 799px) {
+                        width: 100%;
+                    }
                     h4 {
                         text-align: center;
                         color: $textLight;

@@ -1,10 +1,17 @@
 .portfolio-container {
     width: 100%;
     margin-bottom: 100px;
+    overflow: hidden !important;
     .projects-container {
         .projects-row {
             display: flex;
             margin-bottom: 20px;
+            @media only screen and (max-width: 1199px) {
+                flex-direction: column;
+            }
+            @media only screen and (max-width: 599px) {
+                margin-bottom: 0;
+            }
             .project {
                 color: black;
                 border-radius: 10px;
@@ -14,7 +21,10 @@
                 box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
                 overflow: hidden;
                 text-decoration: none;
-                // cursor: pointer;
+                @media only screen and (max-width: 599px) {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
                 .project-img-container {
                     position: relative;
                     overflow: hidden;
@@ -55,6 +65,12 @@
                     }
                     h3 {
                         font-size: 30px;
+                        @media only screen and (max-width: 450px) {
+                            font-size: 22px;
+                        }
+                        @media only screen and (max-width: 370px) {
+                            font-size: 20px;
+                        }
                     }
                     p {
                         font-size: 14px;
@@ -75,6 +91,10 @@
                 }  
             }
         }
-        
+        .bottom-projects-row {
+            @media only screen and (max-width: 599px) {
+                display: none;
+            }
+        }
     }
 }

@@ -1,3 +1,4 @@
+// register scroll trigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 let loadingTl = gsap.timeline();
@@ -6,7 +7,7 @@ let loadingTl = gsap.timeline();
 loadingTl
     .fromTo('header', 
         {opacity: 0}, 
-        {opacity: 1, duration: 1.5, delay: 5.5, ease: 'power3.out'}
+        {opacity: 1, duration: 1.5, delay: 5, ease: 'power3.out'}
     )
     .fromTo('.home',
         {opacity: 0},
@@ -23,8 +24,6 @@ loadingTl
         {y: 0, opacity: 1, duration: 3, ease: 'power3.out'},
         '-=1.2'
     );
-
-// scroll animations
 
 //section scroll animations
 gsap.fromTo('#portfolio-title',
@@ -98,12 +97,12 @@ gsap.fromTo('#project-cpk',
     }
 );
 
-gsap.fromTo('#bottom-project-row',
+gsap.fromTo('#bottom-projects-row',
     {x:300, opacity: 0},
     {x:0, opacity: 1, duration: 1, ease: 'power3.out',
         scrollTrigger:{
             trigger: '#bottom-project-row',
-            start: "70% bottom"
+            start: "35% center"
         }
     }
 );
@@ -114,7 +113,7 @@ gsap.fromTo('.specialization-container',
     {x:0, opacity: 1, duration: 1, ease: 'power3.out',
         scrollTrigger:{
             trigger: '.specialization-container',
-            start: "bottom bottom"
+            start: "center bottom"
         }
     }
 );
@@ -124,7 +123,7 @@ gsap.fromTo('.skills-container',
     {x:0, opacity: 1, duration: 1, ease: 'power3.out',
         scrollTrigger:{
             trigger: '.skills-container',
-            start: "bottom bottom"
+            start: "center bottom"
         }
     }
 );
@@ -134,7 +133,7 @@ gsap.fromTo('.education-container',
     {x:0, opacity: 1, duration: 1, ease: 'power3.out',
         scrollTrigger:{
             trigger: '.education-container',
-            start: "bottom bottom"
+            start: "center bottom"
         }
     }
 );

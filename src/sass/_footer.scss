@@ -1,17 +1,15 @@
 footer {
     display: flex;
     justify-content: center;
-    .footer-border {
-        width: 80%;
-        max-width: 1200px;
-        
-    }
     .footer-container {
         border-top: 1px solid $textGray;
         padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media only screen and (max-width: 599px) {
+            max-width: calc(100vw - 60px);
+        }
         .social-icons-footer {
             display: flex;
             align-items: center;

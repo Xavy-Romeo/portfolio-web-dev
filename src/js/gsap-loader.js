@@ -1,3 +1,5 @@
+const loaderEl = document.getElementById('loader');
+
 let loaderTl = gsap.timeline();
 
 loaderTl
@@ -14,10 +16,19 @@ loaderTl
         '-=3'
     )
     .fromTo('.pre-loader-container',
-        {opacity: 1, overflow: 'hidden'},
-        {opacity: 0, overflow: 'initial', duration: 1}
+        {opacity: 1},
+        {opacity: 0, duration: 1}
     )
     .fromTo('#main',
         {opacity: 0},
-        {opacity: 1, duration: .1}
+        {opacity: 1, duration: 1},
+        "-=1"
+    )
+    .fromTo('#body',
+        {overflowY: 'hidden'},
+        {overflowY: 'initial'}
     );
+
+setTimeout(() => {
+    loaderEl.style.display = 'none';
+}, 5000);
